@@ -47,7 +47,7 @@ body::after {
   height: 100%;
   pointer-events: none;
   background-color: rgba(255, 0, 0, 0.3); /* start color */
-  animation: colorShift 10s infinite linear;
+  animation: colorShift 2s infinite linear;
   z-index: -1; /* Above background but behind content */
 }
 
