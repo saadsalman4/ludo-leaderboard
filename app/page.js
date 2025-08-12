@@ -37,14 +37,14 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div style={{ maxWidth: "900px", margin: "0 auto", padding: "20px", fontFamily: "Arial, sans-serif" }}>
-      <h1 style={{ textAlign: "center", fontSize: "28px", fontWeight: "bold", marginBottom: "20px", color: "white" }}>🎲 SYS-Ludo Leaderboard</h1>
+    <div style={{ maxWidth: "900px", margin: "0 auto", padding: "0px", fontFamily: "Arial, sans-serif" }}>
+      <h1 style={{ textAlign: "center", fontSize: "28px", fontWeight: "bold", marginBottom: "20px", color: "white", marginTop:"15px" }}>🎲 SYS-Ludo Leaderboard</h1>
 
       <table style={{ width: "100%", borderCollapse: "collapse", backgroundColor: "white", boxShadow: "0 2px 8px rgba(0,0,0,0.1)" }}>
         <thead style={{ backgroundColor: "#2563eb", color: "white" }}>
           <tr>
             {["Name", "Games Played", "1st", "2nd", "3rd", "4th", "Score"].map((h) => (
-              <th key={h} style={{ padding: "12px" }}>{h}</th>
+              <th key={h} style={{ padding: "5px" }}>{h}</th>
             ))}
           </tr>
         </thead>
@@ -82,6 +82,7 @@ export default function HomePage() {
           </div>
         ))}
       </div>
+      <div style={{display:"flex", justifyContent:"center"}}>
       <button
   onClick={() => {
     const trimmed = results.map((n) => n.trim().toLowerCase());
@@ -95,6 +96,7 @@ export default function HomePage() {
 >
   Submit Game
 </button>
+</div>
 
 
       {/* Password Modal */}
