@@ -38,7 +38,7 @@ export default function HomePage() {
 
   return (
     <div style={{ maxWidth: "900px", margin: "0 auto", padding: "20px", fontFamily: "Arial, sans-serif" }}>
-      <h1 style={{ textAlign: "center", fontSize: "28px", fontWeight: "bold", marginBottom: "20px", color: "white" }}>🎲 Ludo Leaderboard</h1>
+      <h1 style={{ textAlign: "center", fontSize: "28px", fontWeight: "bold", marginBottom: "20px", color: "white" }}>🎲 SYS-Ludo Leaderboard</h1>
 
       <table style={{ width: "100%", borderCollapse: "collapse", backgroundColor: "white", boxShadow: "0 2px 8px rgba(0,0,0,0.1)" }}>
         <thead style={{ backgroundColor: "#2563eb", color: "white" }}>
